@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 3 Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Optional: Add Google Fonts if used in Figma -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="navbar">
+        <div class="container">
+            <!---heart sa kaliwa--->
+            <span class="heart heart-left">❤️</span>
+            <div class="logo">
+               Safira's Web
+            </div>
+            <nav class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+                <button class="btn primary-btn">Sign Up</button> <!-- Match Figma button style -->
+            </nav>
+            <!--heart sa kanan-->
+            <span class="heart heart-right">❤️</span>
+            <!-- Mobile Menu Toggle (Hidden on Desktop) -->
+            <button class="mobile-menu-btn" id="mobileMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h2>HELLO I AM</h2>
+                <h1>Kate F. Fabrero</h1>
+                <p>Aspiring Designer & Student</p>
+                <p>I am a college student passionate about design, technology, and creativity. I enjoy creating website, applications, and digital artwork. </p>
+                <div class="hero-buttons">
+                    <button class="btn primary-btn">Contact Me</button>
+                    <button class="btn secondary-btn">Learn More About Me</button>
+                </div>
+            </div>
+            <!--kanan:picture ko-->
+            <div class="hero-image">
+                <img src="profile pic.jpg" alt="Kate Fabrero"> <!-- Replace with Figma hero graphic -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <p class="section-subtitle">What makes our platform stand out</p>
+            
+            <div class="features-grid">
+                <!-- Feature Card 1 -->
+                <div class="feature-card">
+                    <img src="images/feature-icon1.png" alt="Feature Icon 1">
+                    <h3>Web Development</h3>
+                    <p>Create responsive website and portfolio pages.</p>
+                </div>
+                <!-- Feature Card 2 -->
+                <div class="feature-card">
+                    <img src="images/feature-icon2.png" alt="Feature Icon 2">
+                    <h3>App Development</h3>
+                    <p>Design simple application and digital system.</p>
+                </div>
+                <!-- Feature Card 3 -->
+                <div class="feature-card">
+                    <img src="images/feature-icon3.png" alt="Feature Icon 3">
+                    <h3>UI/Graphic Design</h3>
+                    <p>Create wireframes, prototype, and layouts.</p>
+                </div>
+                <!-- Feature Card 4 -->
+                <div class="feature-card">
+                    <img src="images/feature-icon4.png" alt="Feature Icon 4">
+                    <h3>House Design</h3>
+                    <p>Design basic home layouts and architectural ideas..</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section (Optional, if in mockup) -->
+    <section id="about" class="about">
+        <div class="container about-content">
+            <div class="about-image">
+                <img src="images/about-image.png" alt="About Visual">
+            </div>
+            <div class="about-text">
+                <h2>About Us</h2>
+                <p>Detailed text about the project/organization, as per Figma. Explain your mission or purpose here.</p>
+                <button class="btn primary-btn">Read Full Story</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Your Full Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="your.email@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="5" placeholder="Type your message here..." required></textarea>
+                </div>
+                <button type="submit" class="btn primary-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+     <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Your Full Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="your.email@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="5" placeholder="Type your message here..." required></textarea>
+                </div>
+                <button type="submit" class="btn primary-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="Footer Logo">
+            </div>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#features">Features</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-social">
+                <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
+            </div>
+            <p class="copyright">&copy; 2024 Activity 3 Website. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
