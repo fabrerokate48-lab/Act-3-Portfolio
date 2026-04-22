@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif; /* Replace with Figma font */
+    font-family: 'Times New Roman', 'Georgia', serif; /* Replace with Figma font */
 }
 
 :root {
@@ -43,8 +43,13 @@ body {
 }
 
 .primary-btn {
-    background-color: var(--primary-color);
+    background-color: #d63384;
     color: var(--white);
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-family: 'Times New Roman', 'Georgia', serif;
+    cursor: pointer;
 }
 
 .primary-btn:hover {
@@ -83,44 +88,44 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px 0;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    background: transparent;
+    padding: 20px 0!important;
+    position: sticky!important;
+    top: 0!important;
+    z-index: 999!important;
+    background: transparent!important;
+    width: 100%!important;
 }
 
-.narbar .container{
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 15px 40px;
+.nav-container {
+    display: flex!important;
+    align-items: center!important;
+    justify-content: space-between!important;
+    width: 95%;
+    max-width: 1400px!important;
+    padding: 8px 30px!important;
+    background: rgba(255, 255, 255, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.6);
     border-radius: 50px;
-    /*Glass Effect*/
-    background: pink;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 2px solid rgba(255, 105, 180, 0.5);
-    box-shadow: 0 0 20px rgba(255, 105, 180, 0.3);
-    /* Sparkle Animation*/
-    animation: sparkle 3s linear infinite;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 4px 15px rgba(255, 105, 180, 0.25), 0 8px 30px rgba(255, 105, 180, 0.15);
+    flex-wrap: nowrap;
+    white-space: nowrap;
 }
-/*Heart style*/
+.nav-left{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.nav-right{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
 .heart{
     font-size: 22px;
     color: #ff69b4;
-    opacity: 0.9;
-}
-.heart-left{
-    left: 15px;
-}
-
-.heart-right{
-    right: 15px;
+    line-height: 1;
 }
 .navbar .container {
     display: flex;
@@ -128,48 +133,36 @@ body {
     align-items: center;
 }
 
-.logo {
-    font-size: 28px;
-    font-family: 'Inter' , sans-serif!important;
-    font-weight: bold;
-    color: #d63384;
+.nav-logo {
+    font-size: 24px !important;
+    font-family: 'Times New Roman' , 'Georgia', serif !important;
+    font-weight: bold !important;
+    color: #d63384 !important;
+    white-space: nowrap !important;
+    line-height: 1 !important;
+    display: inline-block !important;
+    visibility: visible !important;
 }
 
 .nav-links {
     display: flex;
-    gap: 32px;
+    gap: 30px;
     align-items: center;
 }
 
 .nav-links a {
-    font-family: 'Inter' , sans-serif;
+    font-family: 'Times New Roman' , 'Georgia';
     text-decoration: none;
-    font-size: 16px;
+    font-size: 19px;
     color: #d63384;
     font-weight: 500;
     transition: all 0.3s ease;
+    white-space: nowrap;
 }
 
 .nav-links a:hover {
-    color: var(--primary-color);
+    color: #ff1493;
 }
-
-.mobile-menu-btn {
-    display: none;
-    flex-direction: column;
-    gap: 5px;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-}
-
-.mobile-menu-btn span {
-    width: 25px;
-    height: 3px;
-    background-color: var(--text-dark);
-    border-radius: 2px;
-}
-
 
 /* Hero Section Styles */
 .hero {
@@ -186,13 +179,19 @@ body {
 
 .hero-text h2 {
     font-size: 1.5rem;
-    color: var(--text-light);
+    font-family: 'Times New Roman', 'Georgia', serif !important;
+    font-weight: 500 !important;
+    color: #d63384;
     margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .hero-text h1 {
     font-size: 3rem;
-    color: var(--text-dark);
+    font-family: 'Times New Roman', 'Georgia', serif !important;
+    font-weight: bold;
+    color: #d63384;
     margin-bottom: 16px;
     line-height: 1.2;
 }
@@ -206,16 +205,20 @@ body {
     box-shadow: 0 0 10px rgba(255, 230, 242, 0.4);
 }
 .hero-text p {
-    font-size: 1.1rem;
-    color: var(--text-light);
+    font-size: 1.2rem;
+    font-family: 'Times New Roman', 'Georgia', serif !important;
+    font-weight: 500;
+    color:  #d63384;
     margin-bottom: 32px;
     line-height: 1.6;
     max-width: 500pc;
+    font-style: normal;
 }
 
 .hero-buttons {
     display: flex;
     gap: 16px;
+    margin-top: 10px;
 }
 
 .hero-image img {
