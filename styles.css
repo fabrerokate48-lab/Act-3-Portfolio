@@ -1,3 +1,18 @@
+html {
+    scroll-behavior: smooth;
+}
+section {
+    scroll-margin-top: 130px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+#home {
+    margin-top: 10;
+    padding-top: 20px;
+}
 /* Base Styles */
 * {
     margin: 0;
@@ -18,14 +33,14 @@
 }
 
 body {
-    background-image: url('bg.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-color: var(--text-dark);
+   background-image: url(bg.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-attachment: fixed;
+   background-color: var(--text-dark);
+   padding-top: 20px;
 }
-
 .container {
     width: 90%;
     max-width: 1200px;
@@ -93,7 +108,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 40px 0!important;
-    position: sticky!important;
+    position: fixed!important;
     top: 0!important;
     z-index: 999!important;
     background: transparent!important;
@@ -149,6 +164,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 10px;
 }
 
 .nav-logo {
@@ -187,14 +203,15 @@ body {
 
 /* Hero Section Styles */
 .hero {
-    padding: 75px 0;
+    padding: 100px;
     background-color: transparent!important;
 }
 
 .hero-content {
     display: flex;
+    justify-content: flex-start;
     align-items: center;
-    gap: 64px;
+    gap: 62px;
     min-height: 60vh;
 }
 
@@ -203,9 +220,10 @@ body {
     font-family: 'Poppins', serif !important;
     font-weight: 500 !important;
     color: #d63384;
-    margin-bottom: 8px;
+    margin-bottom: 5px;
     text-transform: uppercase;
     letter-spacing: 1px;
+    text-align: left;
 }
 
 .hero-text h1 {
@@ -215,6 +233,7 @@ body {
     color: #d63384;
     margin-bottom: 16px;
     line-height: 1.2;
+    text-align: left;
 }
 
 .hero-text p {
@@ -225,6 +244,7 @@ body {
     line-height: 1.6;
     max-width: 500pc;
     font-style: normal;
+    text-align: left;
 }
 .student-text{
     font-size: 1.3rem !important;
@@ -234,10 +254,11 @@ body {
     font-size: 2rem!important;
     font-family: inherit;
 }
-.hero-image img{
-    width: 500px;
-    height: 500px;
+.hero-image {
+    width: 580px;
+    height: 580px;
     object-fit: cover;
+    gap:5px;
 }
 
 .hero-buttons {
@@ -245,190 +266,689 @@ body {
     gap: 40px;
     margin-top: 10px;
 }
-/* Features Section Styles */
-.features {
-    padding: 80px 0;
-    background-color: transparent!important;
-}
 
-.features-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 32px;
-}
-
-.feature-card {
-    background-color: rgba(255, 255, 255, 0.3);
-    padding: 32px;
-    border-radius: 20px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-    text-align: center;
-    transition: transform 0.3s ease;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.feature-card:hover {
-    transform: translateY(-8px);
-}
-
-.feature-card img {
-    height: 64px; /* Adjust to Figma icon size */
-    margin-bottom: 16px;
-}
-
-.feature-card h3 {
-    color: var(--text-dark);
-    margin-bottom: 8px;
-    font-size: 1.3rem;
-}
-
-.feature-card p {
-    color: var(--text-light);
-    line-height: 1.5;
-}
 /* About Section Styles */
 .about {
-    padding: 80px 0;
-    background-color: transparent!important;
+    padding: 0.1px;
 }
-
+.about-box{
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 20px;
+    padding: 50px 60px;
+    min-height: 550px;
+    width: 110%;
+    margin-left: -5%;
+    border: 1px solid rgba(255, 105, 180, 0.2);
+    box-shadow: none;
+}
+.about-title{
+    font-family: 'Changa', sans-serif;
+    font-size: 3.0rem;
+    color: #d63384;
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
 .about-content {
     display: flex;
-    align-items: center;
-    gap: 64px;
+    align-items: flex-start;
+    gap: 40px;
 }
-
-.about-text h2 {
-    font-size: 2.5rem;
-    color: var(--text-dark);
-    margin-bottom: 16px;
+.about-text p{
+    font-family: 'ABeeZee', sans-serif;
+    color: #d63384;
+    line-height: 1.7;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    text-indent: 50px;
+    text-align: justify;
 }
-
-.about-text p {
-    font-size: 1.1rem;
-    color: var(--text-light);
-    margin-bottom: 32px;
-    line-height: 1.6;
-}
-
-
-/* Contact Section Styles */
-.contact {
-    padding: 80px 0;
-    background-color: transparent!important;
-}
-
-.contact-form {
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: rgba(255, 255, 255, 0.3);
-    padding: 40px;
-    border-radius: 20px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-}
-.form-group {
-    margin-bottom: 24px;
-}
-
-.form-group label {
+.about-media img{
+    width: 530px;
+    height: auto;
     display: block;
-    color: var(--text-dark);
-    margin-bottom: 8px;
-    font-weight: 500;
+}
+@media (max-width: 900px) {
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .about-title{
+        text-align: center;
+    }
+}
+/* Features Section Styles */
+.skills {
+    padding: 50px 0;
+  text-align: center;
 }
 
-.form-group input,
-.form-group textarea {
+.skill-title {
+    font-family: 'Oleo Script', serif!important;
+    font-weight: 700;
+    font-size: 3.5rem;
+    color: #d63384;
+    margin-bottom: 50px;
+}
+.skills-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+.skill-card {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 30px;
+    border: 5px solid #ffffff;
+    box-shadow: opx 8px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 20px 25px;
+    width: 350px;
+    height: 200px;
+    transition: all 0.3s ease;
+}
+
+/* ✅ Idagdag ang code na ito para sa hover effect */
+.skill-card:hover {
+    transform: translateY(-8px); /* Ito ang magpapataas nang kaunti kapag tinapatan */
+    box-shadow: 0 8px 20px rgba(255, 105, 180, 0.4); /* Mas malalim na anino para magmukhang nakataas */
+    background: rgba(255, 255, 255, 0.5); /* Mas matingkad na kulay kapag tinapatan */
+}
+
+.skill-card.web img{
+    width: 110px;
+    height: 110px;
+    flex-shrink: 0;
+    margin-top: -5px;
+    object-fit: contain;
+}
+.skill-card.app img{
+    width: 125px;
+    height: 110px;
+    flex-shrink: 0;
+    margin-top: -5px;
+    object-fit: contain;
+}
+.skill-card.UI img{
+    width: 110px;
+    height: 110px;
+    flex-shrink: 0;
+    margin-top: -5px;
+    object-fit: contain;
+}
+.skill-card.House img{
+    width: 120px;
+    height: 110px;
+    flex-shrink: 0;
+    margin-top: -5px;
+    object-fit: contain;
+}
+.skill-card .text-content {
+    display: block;
+    text-align: left;
     width: 100%;
-    padding: 12px 16px;
-    border: 1px solid rgba(255, 105, 180, 0.3);
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 12px;
-    font-size: 16px;
-    color: var(--text-dark);
+}
+.skill-card h3 {
+    font-family: 'Times New Roman', sans-serif;
+    color: #d63384;
+    font-size: 1.5rem;
+    margin : 0 0 8px 0;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: left;
+    width: 100%;
+    display: block;
+    float: none;
+}
+.skill-card.web p{
+    font-family: 'ABeeZee' , sans-serif;
+    color: #d63384;
+    font-size: 1rem;
+    line-height: 1.5;
+    display: block;
+    width: 100%;
+    float: none;
+    clear: both;
+    margin: 10px 0 0 0;
+    text-align: left;
+    text-indent: 0;
+}
+.skill-card.app p{
+    font-family: 'ABeeZee' , sans-serif;
+    color: #d63384;
+    font-size: 1rem;
+    line-height: 1.5;
+    display: block;
+    width: 100%;
+    float: none;
+    clear: both;
+    margin: 10px 0 0 0;
+    text-align: left;
+    text-indent: 0;
+}
+.skill-card.UI p{
+    font-family: 'ABeeZee' , sans-serif;
+    color: #d63384;
+    font-size: 1rem;
+    line-height: 1.5;
+    display: block;
+    width: 100%;
+    float: none;
+    clear: both;
+    margin: 10px 0 0 0;
+    text-align: left;
+    text-indent: 0;
+}
+.skill-card.House p{
+    font-family: 'ABeeZee' , sans-serif;
+    color: #d63384;
+    font-size: 1rem;
+    line-height: 1.5;
+    display: block;
+    width: 100%;
+    float: none;
+    clear: both;
+    margin: 10px 0 0 0;
+    text-align: left;
+    text-indent: 0;
+}
+.skills-button img {
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
 }
 
-.form-group input:focus,
-.form-group textarea:focus {
-    outline: none;
-    border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(255, 105, 180, 0.2);
-}
-
-/* Footer Styles */
-.footer {
-    background-color: rgba(255, 255, 255, 0.2);
-    padding: 40px 0;
+/* General Body/Base Styles (assuming light pink background like your image) */
+body {
+    background-color: #f8e8f8; /* A light pink background */
+    font-family: 'Georgia', serif; /* A more artistic font for "My Artwork Gallery" */
+    color: #555;
+    margin: 0;
+    padding-top: 50px; /* Space from the top of the page */
     text-align: center;
+}
+
+/* My Artwork Gallery Section Title */
+.artwork-gallery-title {
+    font-family: 'Brush Script MT', cursive; /* Example of a script font */
+    font-size: 3em;
+    color: #e91e63; /* Pink color */
+    margin-bottom: 60px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+.artwork-gallery-section {
+    margin-bottom: 180px;
+}
+
+/* Outer Wrapper for Gallery (to position arrows relative to it) */
+.gallery-wrapper-outer {
+    position: relative; /* Essential for positioning arrows absolutely within it */
+    max-width: calc((250px * 4) + (20px * 3)); /* (itemWidth * 4) + (gap * 3) = 1000px + 60px = 1060px */
+    margin: 0 auto; /* Center the gallery on the page */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+/* Inner Wrapper for Gallery Content (holds scrollable area and arrows) */
+.gallery-wrapper-inner {
+    position: relative; /* For z-index to make arrows clickable */
+    display: flex; /* Helps align arrows and container */
+    align-items: center; /* Vertically center arrows with gallery */
+}
+
+/* Gallery Container - This is the scrollable part */
+.gallery-container {
+    display: flex; /* Arranges images horizontally */
+    overflow-x: scroll; /* Enables horizontal scrolling */
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth; /* Smooth scrolling effect */
+    -webkit-overflow-scrolling: touch; /* Improves scrolling on iOS devices */
+    gap: 20px; /* Space between gallery items */
+    padding: 20px; /* Padding around images inside the scroll area */
+    border-radius: 20px; /* Rounded corners for the entire scroll container */
+    /* * MODIFIED: REMOVED background: rgba(255, 255, 255, 0.5); * */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Soft shadow for depth */
+    flex-grow: 1; /* Allows container to take available width */
+
+}
+
+/* Hide scrollbar for aesthetic purposes (optional) */
+.gallery-container::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, Opera */
+}
+.gallery-container {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Individual Gallery Item (each image card) */
+.gallery-item {
+    flex: 0 0 auto; /* Do not grow, do not shrink, base size is auto (from image) */
+    width: 240px; /* Fixed width for each image card */
+    height: 340px; /* Fixed height for each image card */
+    /* * MODIFIED: REMOVED background-color: #fdf5f8; * */
+    border-radius: 15px; /* Rounded corners for each card */
+    overflow: hidden; /* Hide anything outside the card */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Shadow for individual cards */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    cursor: pointer; /* Indicate clickable */
+    border: 3px solid #ffccdd; /* A subtle border */
+    position: relative; /* For active state styling */
+    scroll-snap-align: start;
+
+    /* Add a subtle background image as seen in your image */
+    background: transparent;
+    background-size: cover;
+    background-position: center;
+}
+
+.gallery-item:hover {
+    transform: scale(1.03); /* Slightly enlarge on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Active/Clicked Gallery Item State (optional, if you want a highlight) */
+.gallery-item.active {
+    transform: scale(1.05); /* Enlarge more when active */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3), 0 0 0 5px #f48fb1; /* Stronger shadow and pink border */
+}
+
+
+.gallery-item img {
+    max-width: 90%; /* Image takes up most of the item, leaving some background */
+    max-height: 90%; /* Ensure image fits */
+    object-fit: contain; /* Scales image to fit without cropping */
+    border-radius: 10px; /* Rounded corners for the image itself */
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2); /* Shadow for the image within the card */
+    z-index: 2; /* To make sure image is above background */
+    margin: auto; /* Center the image */
+    display: block; /* Remove extra space below image */
+    opacity: 0.7; /* Makes images 70% opaque (30% transparent) */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
+}
+
+/* Hover effect to make image fully opaque */
+.gallery-item img:hover {
+    opacity: 1; /* Fully opaque on hover */
+}
+
+
+/* Navigation Arrows */
+.gallery-arrow {
+    position: absolute; /* Position relative to .gallery-wrapper-outer */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for perfect vertical centering */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    border: none;
+    border-radius: 50%; /* Circular button */
+    width: 50px;
+    height: 50px;
+    font-size: 2em;
+    color: #e91e63; /* Pink arrow color */
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 10; /* Ensure arrows are above other content */
+    display: flex; /* To center the arrow icon */
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-arrow:hover {
+    background-color: #f48fb1; /* Darker pink on hover */
+    color: white; /* White arrow on hover */
+    transform: translateY(-50%) scale(1.1); /* Slight enlargement on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.left-arrow {
+    left: -25px; /* Position left arrow slightly outside the wrapper */
+}
+
+.right-arrow {
+    right: -25px; /* Position right arrow slightly outside the wrapper */
+}
+
+/* Arrow Icon inside button for better styling control */
+.arrow-icon {
+    font-size: 1em; /* Adjust size of unicode arrow */
+}
+
+
+/* Section Titles (e.g., "💖 Projects 💖", "💖 Contact Me 💖") */
+.section-title {
+    font-size: 2.5em; /* Larger font size */
+    color: #e91e63; /* Bright pink color */
+    margin-top: 50px;
+    margin-bottom: 40px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1); /* Slight shadow for depth */
+}
+
+/* Projects Container - to lay out cards side-by-side */
+.projects-container {
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: center; /* Center the cards */
+    gap: 40px; /* Space between cards */
+    flex-wrap: wrap; /* Allow cards to wrap to the next line on smaller screens */
+    margin-bottom: 80px; /* Space below the projects section */
+}
+
+/* Individual Project Card */
+.project-card {
+    background-color: #ffffff; /* White background for each card */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    padding: 30px;
+    width: 350px; /* Fixed width for each card (adjust as needed) */
+    display: flex; /* Flex container for content inside card */
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center;
+}
+
+.project-card:hover {
+    transform: none;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
+}
+
+/* Project Titles within cards */
+.project-title {
+    font-size: 1.8em;
+    color: #f06292; /* Medium pink */
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* Project Preview Image Styling */
+.project-preview {
+    width: 100%; /* Make preview container take full width of card */
+    max-width: 300px; /* Limit image width to avoid overflow */
+    height: auto; /* Maintain aspect ratio */
+    overflow: hidden; /* Hide any overflow */
+    border-radius: 10px; /* Slightly rounded corners for the image preview */
+    margin-bottom: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for the image */
+}
+
+.project-preview img {
+    width: 100%; /* Image takes full width of its container */
+    height: auto;
+    display: block; /* Remove extra space below image */
+    transition: transform 0.3s ease; /* Smooth zoom on hover */
+}
+
+.project-card:hover .project-preview img {
+    transform: scale(1.05); /* Slightly zoom image on card hover */
+}
+
+/* Project Description */
+.project-description {
+    font-size: 1.1em;
+    color: #666666; /* Slightly lighter gray */
+    margin-bottom: 30px;
+    line-height: 1.6;
+    flex-grow: 1; /* Allow description to take up available space */
+}
+
+/* "Click here" Button */
+.project-button {
+    display: inline-block; /* Make it block-level for padding/margins */
+    background-color: #f8bbd0; /* Light pink background */
+    color: #e91e63; /* Darker pink text */
+    padding: 12px 30px;
+    border-radius: 30px; /* Very rounded pill shape */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold;
+    font-size: 1.1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-button:hover {
+    background-color: #f48fb1; /* Slightly darker pink on hover */
+    transform: translateY(-2px); /* Lift button slightly */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* More pronounced shadow */
+}
+
+/* --- Section Title Styling (Generic, for "Contact Me", "About Me", etc.) --- */
+/* If you already have a .section-title, integrate these properties. */
+.section-title {
+    font-size: 2.8em;
+    color: #e91e63; /* Darker pink */
+    margin-bottom: 60px;
+    font-family: 'Courgette', cursive; /* Example font from your hero section */
+    font-weight: normal;
+    text-align: center;
+}
+
+.section-title i {
+    color: #f48fb1; /* Lighter pink for heart icons */
+    margin: 0 15px;
+    font-size: 0.8em; /* Slightly smaller hearts */
+}
+
+
+
+/* --- Contact Section Container Styling --- */
+.contact-me-section {
+    padding: 0px; /* Padding inside the contact section */
+    background-color: transparent; /* VERY IMPORTANT: Ensures body background shows */
+    text-align: center; /* Centers block-level content if not flexed */
+}
+
+.contact-content-wrapper {
+    display: flex;
+    justify-content: center; /* Centers the two main columns (form and info/socials) */
+    gap: 30px; /* Space between the left and right columns */
+    flex-wrap: wrap; /* Allows columns to stack on smaller screens */
+    max-width: 1200px; /* Max width for the entire contact content */
+    margin: 0 auto; /* Center the content wrapper horizontally */
+    align-items: flex-start; /* Align items to the top of the container */
+}
+
+/* --- Common Styling for all Semi-Transparent Contact Boxes --- */
+/* This class provides the light white, semi-transparent background over the sparkle */
+.contact-box {
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white */
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    padding: 30px; /* Default internal padding for each box */
+    width: 100%; /* Take full width on smaller screens */
+    max-width: 450px; /* Max width for these boxes on larger screens */
+    box-sizing: border-box; /* Include padding in width calculation */
+    text-align: left; /* Default text alignment inside boxes */
+}
+
+/* --- Contact Form Styling --- */
+.contact-form-container {
+    /* Inherits most styling from .contact-box */
+    padding: 40px; /* Slightly more internal padding for the form itself */
+    margin-bottom: 20px; /* Space below form when it stacks on smaller screens */
+}
+
+.contact-form .form-group {
+    margin-bottom: 25px; /* Space between input groups (label + input) */
+}
+
+.contact-form label {
+    display: block;
+    font-size: 1.1em;
+    color: #e91e63; /* Dark pink label text */
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: calc(100% - 24px); /* Account for padding and border */
+    padding: 12px;
+    border: 1px solid #ffccdd; /* Light pink border */
+    border-radius: 10px;
+    font-size: 1em;
+    color: #555;
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent input background */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form textarea {
+    resize: vertical; /* Allow vertical resizing only */
+    min-height: 100px; /* Minimum height for the message area */
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+    border-color: #f48fb1; /* Highlight border on focus */
+    box-shadow: 0 0 0 3px rgba(244, 143, 177, 0.3); /* Soft glow on focus */
+    outline: none; /* Remove default browser outline */
+}
+
+.send-button {
+    background-color: #f48fb1; /* Pink button */
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.1em;
+    width: 200px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    margin-left: 93px;    
+   
+}
+
+.send-button:hover {
+    background-color: #e91e63; /* Darker pink on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+/* --- Contact Info & Socials Container (Right Column) --- */
+.contact-info-socials-container {
+    display: flex;
+    flex-direction: column; /* Stack info and socials boxes vertically */
+    gap: 20px; /* Space between each individual box (email, phone, location, socials) */
+    width: 100%;
+    max-width: 450px; /* Matching max-width of the form container */
+}
+
+/* Individual Contact Info Item Box */
+.contact-info-item {
+    /* Inherits most styling from .contact-box */
+    display: flex;
+    align-items: center; /* Vertically center icon and text */
+    padding: 25px 30px; /* Adjusted internal padding for these boxes */
+    color: #d63384; /* Gray text for info */
+}
+
+.contact-icon {
+    margin-right: 20px;
+    width: 55px;
+    text-align: center;
+}
+
+.contact-info-item p {
+    margin: 0; /* Remove default paragraph margin */
+    font-size: 1.1em;
+    line-height: 1.4;
+}
+
+.contact-info-item p span {
+    font-weight: bold;
+    color: #e91e63; /* Darker pink for the actual contact detail */
+    display: block; /* Makes the actual detail appear on a new line below the label */
+    font-size: 0.9em;
+}
+
+/* --- Socials Group --- */
+.socials-group {
+    /* Inherits most styling from .contact-box */
+    display: flex;
+    padding: 25px 90px; /* Standard padding for the box */
+    display: flex; /* Make the box itself a flex container */
+    align-items: center; /* Vertically align the inner content */
+    gap: 25;
+}
+
+.socials-label {
+    font-size: 1.1em;
+    color: #e91e63;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Ayos ng nilalaman sa loob */
+.contact-info-item > div {
+    display: flex !important;
+    flex-direction: column !important; /* Magkapatong ang teksto at mga icon */
+    align-items: flex-start !important;
+    gap: 6px !important; /* Kaunting espasyo lang sa pagitan */
+}
+
+/* Tekstong "Socials:" */
+.socials-label {
+    font-size: 1.1em !important;
+    color: #e91e63 !important;
+    margin: 0 !important;
+    font-weight: bold !important;
+    line-height: 1 !important;
+}
+
+/* Lugar ng mga icon */
+.social-icons-area {
+    display: flex !important;
+    gap: 10px !important; /* Pagitan ng bawat icon */
+    margin: 0 !important;
+    flex-wrap: nowrap !important; /* Para hindi magtapon sa ibang linya */
+}
+.social-icon {
+    width: 55px;
+}
+
+/* --- Estilo ng Footer --- */
+.site-footer {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    padding: 20px 0 !important;
+    margin-top: 20px !important;
 }
 
 .footer-content {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    align-items: center;
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px !important; /* Pagitan ng puso at teksto */
+    background-color: #f8d7e7 !important; /* Kulay pink na katulad sa larawan */
+    padding: 12px 30px !important;
+    border-radius: 50px !important; /* Ginagawang bilog ang mga dulo */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1) !important; /* Kaunting lilim para maganda */
 }
 
-.footer-logo img {
-    height: 40px;
-    margin-bottom: 16px;
+/* Estilo ng mga puso */
+.heart {
+    font-size: 20px !important;
 }
 
-.footer-links {
-    display: flex;
-    gap: 24px;
+/* Estilo ng teksto sa footer */
+.site-footer p {
+    font-size: 20px !important;
+    color: #d63384!important; /* Kulay ng teksto */
+    font-weight: 600 !important;
+    margin: 0 !important;
 }
-
-.footer-links a {
-    color: var(--text-dark);
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.footer-links a:hover {
-    color: var(--primary-color);
-}
-
-.footer-social {
-    display: flex;
-    gap: 16px;
-}
-
-.footer-social img {
-    height: 24px;
-}
-
-.copyright {
-    color: var(--text-light);
-    margin-top: 16px;
-}
- @keyframes sparkle {
-        0%{box-shadow: 0 0 5px rgba(255, 105, 180, 0.2);}
-        50%{box-shadow: 0 0 20px rgba(255, 105, 180, 0.4);}
-        100%{box-shadow: 0 0 5px rgba(255, 105, 180, 0.2);}
-    }
-@media (max-width: 768px) {
-    .nav-links{
-        display: none;
-    }
-
-    .mobile-menu-btn {
-        display: flex;
-    }
-
-    .hero-content,
-    .about-content {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .hero-image img{
-        width: 280px;
-        height: 280px;
-    }
-
-    .section-title{
-        font-size: 2rem;
-    }
-} 
