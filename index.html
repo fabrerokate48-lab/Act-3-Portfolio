@@ -8,8 +8,11 @@
     <!-- Optional: Add Google Fonts if used in Figma -->
     <link href="https://fonts.googleapis.com/css2?family=Times+New+Roman&family=Georgia&family=Playfair+Display&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet" href="">
-    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet" href="">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <!-- Header/Navigation -->
@@ -23,12 +26,13 @@
 
             <div class="nav-right">
                 <nav class="nav-links">
-                    <a href="#home">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#gallery">Gallery</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#contact">Contact</a>
+                    <!-- Added # links pointing to section IDs -->
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#gallery" class="nav-link">Gallery</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#contact" class="nav-link">Contact</a>
                 </nav>
             </div>
             <!--heart sa kanan-->
@@ -38,138 +42,243 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="container hero-content">
+        <div class="hero-content">
             <div class="hero-text">
                 <h2>HELLO I AM</h2>
                 <h1>Kate F. Fabrero</h1>
                 <p><span class="aspiring-text">Aspiring Designer & Student</span></p>
                 <p><span class="student-text">I am a college student passionate about design, technology, and creativity. I enjoy creating website, applications, and digital artwork. </span></p>
                 <div class="hero-buttons">
-                    <button class="btn primary-btn">Contact Me</button>
-                    <button class="btn secondary-btn">Learn More About Me</button>
+                    <!-- Added links to buttons -->
+                    <a href="#contact" class="btn primary-btn">Contact Me</a>
+                    <a href="#about" class="btn secondary-btn">Learn More About Me</a>
                 </div>
             </div>
             <!--kanan:picture ko-->
             <div class="hero-image">
-                <img src="Ellipse 1.png" alt="Kate Fabrero"> <!-- Replace with Figma hero graphic -->
+                <img src="Ellipse 1.png" alt="Kate Fabrero">
             </div>
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section id="features" class="features">
-        <div class="container">
-            <h2 class="section-title">My Skills</h2>
-            <p class="section-subtitle">What makes our platform stand out</p>
-            
-            <div class="features-grid">
-                <!-- Feature Card 1 -->
-                <div class="feature-card">
-                    <img src="images/feature-icon1.png" alt="Feature Icon 1">
-                    <h3>Web Development</h3>
-                    <p>Create responsive website and portfolio pages.</p>
-                </div>
-                <!-- Feature Card 2 -->
-                <div class="feature-card">
-                    <img src="images/feature-icon2.png" alt="Feature Icon 2">
-                    <h3>App Development</h3>
-                    <p>Design simple application and digital system.</p>
-                </div>
-                <!-- Feature Card 3 -->
-                <div class="feature-card">
-                    <img src="images/feature-icon3.png" alt="Feature Icon 3">
-                    <h3>UI/Graphic Design</h3>
-                    <p>Create wireframes, prototype, and layouts.</p>
-                </div>
-                <!-- Feature Card 4 -->
-                <div class="feature-card">
-                    <img src="images/feature-icon4.png" alt="Feature Icon 4">
-                    <h3>House Design</h3>
-                    <p>Design basic home layouts and architectural ideas..</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section (Optional, if in mockup) -->
+    <!-- About Section -->
     <section id="about" class="about">
-        <div class="container about-content">
-            <div class="about-image">
-                <img src="images/about-image.png" alt="About Visual">
-            </div>
-            <div class="about-text">
-                <h2>About Us</h2>
-                <p>Detailed text about the project/organization, as per Figma. Explain your mission or purpose here.</p>
-                <button class="btn primary-btn">Read Full Story</button>
+        <div class="container">
+            <div class="about-box">
+                <h2 class="about-title">ABOUT ME</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Kate Fabrero is a Computer Engineering Technology student with a strong interest in technology, computer system, and digital development. She is currently expanding her knowledge in areas such as networking, computer hardware, and modern technological tools as part of her academic studies.</p>
+                        <p>She enjoys working on creative and technical projects including website mock ups, digital prototypes, and interface design, where she combines creativity with technical thinking.</p>
+                        <p>Through these experiences, she continous to develop her skills in problem-solving, design, and technology. Kate is passionate about learning new technologies and continuously improving her abilities. She aims to gain more experience and build innovative solutions that will contribute to the field of computer engineering in the future.</p>
+                    </div>
+                    <div class="about-media">
+                        <img src="pic.png" alt="About Image"> 
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <form class="contact-form">
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+            <h2 class="skill-title">SKILLS</h2>
+            <div class="skills-container">
+                <div class="skill-card web">
+                    <img src="web.png" alt="Web Development">
+                    <div class="text-content">
+                          <h3>Web Development</h3>
+                          <p>Create responsive website and portfolio pages.</p>
+                    </div>
+                </div>
+                <div class="skill-card app">
+                    <img src="app.png" alt="App Development">
+                    <div class="text-content">
+                        <h3>App Development</h3>
+                        <p>Design simple application and digital system.</p>
+                    </div>
+                </div>
+                <div class="skill-card UI">
+                    <img src="UI.png" alt="UI/Graphic Design">
+                    <div class="text-content">
+                        <h3>UI/Graphic Design</h3>
+                        <p>Create wireframes, prototype, and layouts.</p>
+                    </div>
+                </div>
+                <div class="skill-card House">
+                    <img src="House.png" alt="House Design">
+                    <div class="text-content">
+                        <h3>House Design</h3>
+                        <p>Design basic home layouts and architectural ideas.</p>
+                    </div>
+                </div>
+                <div class="skills-button">
+                    <img src="voice.png"alt="Music Button">
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="artwork-gallery-section">
+    <h2 class="artwork-gallery-title">My Artwork Gallery</h2>
+
+    <div class="gallery-wrapper-outer">
+        <div class="gallery-wrapper-inner">
+            <!-- Left Arrow -->
+            <button class="gallery-arrow left-arrow" aria-label="Scroll left">
+                <div class="arrow-icon">&#9664;</div>
+            </button>
+
+            <!-- Gallery Container for Images -->
+            <div class="gallery-container" id="gallery-container">
+                <div class="gallery-item">
+                    <img src="g11.jpg" alt="Artwork 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="g2.jpg" alt="Artwork 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="g3.png" alt="Artwork 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="g4.jpg" alt="Artwork 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="g5.avif" alt="Artwork 5">
+                </div>
+                <div class="gallery-item">
+                    <img src="g6.png" alt="Artwork 6">
+                </div>
+                <div class="gallery-item">
+                    <img src="g7.avif" alt="Artwork 7">
+                </div>
+                <div class="gallery-item">
+                    <img src="g8.avif" alt="Artwork 8">
+                </div>
+            </div>
+
+            <!-- Right Arrow -->
+            <button class="gallery-arrow right-arrow" aria-label="Scroll right">
+                <div class="arrow-icon">&#9654;</div>
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- Audio Player -->
+<div class="audio-player-controls">
+</div>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+    <h2 class="section-title">💖 Projects 💖</h2>
+
+    <div class="projects-container">
+        <!-- Project 1: Company Website -->
+        <div class="project-card">
+            <h3 class="project-title">Company Website</h3>
+            <div class="project-preview">
+                <img src="proj 1.png" alt="Company Website Preview">
+            </div>
+            <p class="project-description">A sample company website about business consultant.</p>
+            <!-- Replace # with actual link if you have one -->
+            <a href="#" class="project-button" target="_blank">Click here</a>
+        </div>
+
+        <!-- Project 2: E-commerce Website -->
+        <div class="project-card">
+            <h3 class="project-title">E-commerce Website</h3>
+            <div class="project-preview">
+                <img src="proj 2.png" alt="E-commerce Website Preview">
+            </div>
+            <p class="project-description">A sample online shop design with product pages.</p>
+            <!-- Replace # with actual link if you have one -->
+            <a href="#" class="project-button" target="_blank">Click here</a>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Me Section -->
+<section id="contact" class="contact-me-section">
+    <h2 class="section-title">
+        <i class="fas fa-heart"></i> Contact Me <i class="fas fa-heart"></i>
+    </h2>
+
+    <div class="contact-content-wrapper">
+        <!-- Left Column: Contact Form -->
+        <div class="contact-form-container contact-box">
+            <form action="mailto:fabrerokate48@gmail.com" method="POST" enctype="text/plain" class="contact-form">
                 <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" placeholder="Your Full Name" required>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Name" required>
                 </div>
                 <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="your.email@example.com" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
                 </div>
                 <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" rows="5" placeholder="Type your message here..." required></textarea>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Message" rows="5" required></textarea>
                 </div>
-                <button type="submit" class="btn primary-btn">Send Message</button>
+                <button type="submit" class="send-button">Send</button>
             </form>
         </div>
-    </section>
 
-     <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <form class="contact-form">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" placeholder="Your Full Name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="your.email@example.com" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" rows="5" placeholder="Type your message here..." required></textarea>
-                </div>
-                <button type="submit" class="btn primary-btn">Send Message</button>
-            </form>
+        <!-- Right Column: Contact Info & Socials -->
+        <div class="contact-info-socials-container">
+            <!-- Contact Info Items -->
+            <div class="contact-box contact-info-item">
+                <img src="email icon.png" alt="Email Icon" class="contact-icon">
+                <!-- Added mailto link -->
+                <p>Email:<br><a href="mailto:fabrerokate48@gmail.com" style="color: #e91e63; text-decoration: none;"><span>fabrerokate48@gmail.com</span></a></p>
+            </div>
+            <div class="contact-box contact-info-item">
+                <img src="number icon.png" alt="Phone Icon" class="contact-icon">
+                <!-- Added tel link -->
+                <p>Phone:<br><a href="tel:+63912345678955" style="color: #e91e63; text-decoration: none;"><span>+63912345678955</span></a></p>
+            </div>
+            <div class="contact-box contact-info-item">
+                <img src="location .png" alt="Location Icon" class="contact-icon">
+                <p>Location:<br><span>Philippines</span></p>
+            </div>
+
+            <!-- Socials Group -->
+            <div class="contact-box contact-info-item">
+                        <img src="socials.png" alt="Social Icon" class="contact-icon">
+                            <div>
+                                <p class="socials-label">Socials:</p>
+                            <div class="social-icons-area">
+                                <!-- Replace # with your actual profile links -->
+                                <a href="https://www.facebook.com/kate.fabrero.2025" target="_blank">
+                                    <img src="f.png" alt="Facebook" class="social-icon">
+                                </a>
+                                <a href="https://www.instagram.com/singkithia_ako?igsh=YmJpeDJneGRqajdp" target="_blank">
+                                    <img src="IG.png" alt="Instagram" class="social-icon">
+                                </a>
+                                <a href="t.me/kat_chana" target="_blank">
+                                    <img src="T.png" alt="Telegram" class="social-icon">
+                                </a>
+                                <a href="tiktok.com/@_safirakate_" target="_blank">
+                                    <img src="Tiktok.png" alt="TikTok" class="social-icon">
+                                </a>
+                               
+                            </div>
+                        </div>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container footer-content">
-            <div class="footer-logo">
-                <img src="images/logo.png" alt="Footer Logo">
-            </div>
-            <div class="footer-links">
-                <a href="#home">Home</a>
-                <a href="#features">Features</a>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
-            </div>
-            <div class="footer-social">
-                <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
-                <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
-                <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
-            </div>
-            <p class="copyright">&copy; 2024 Activity 3 Website. All rights reserved.</p>
-        </div>
-    </footer>
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="footer-content">
+        <span class="heart">❤️</span>
+        <p>© 2026 Personal Portfolio - Kate</p>
+        <span class="heart">❤️</span>
+    </div>
+</footer>
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
