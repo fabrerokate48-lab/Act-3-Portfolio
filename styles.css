@@ -33,7 +33,7 @@ section {
 }
 
 body {
-   background-image: url(bg.png);
+   background-image: url(Images/bg.png);
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center;
@@ -145,20 +145,26 @@ body {
     padding-right: 22px;
     margin-left:auto ;
 }
-.heart{
-    font-size: 25px;
-    color: #ff69b4;
-    line-height: 1;
-    padding: 0 22px;
+.heart {
+    /* Alisin ang mga lumang istilo na gumagawa ng hugis puso */
+    background-image: url('./Images/heart.png'); 
+    background-size: 100px; /* Para magkasya nang maayos ang larawan */
+    background-repeat: no-repeat; /* Para hindi umulit ang larawan */
+    background-position: center; /* Para nasa gitna ang pagkakalagay */
+    width: 24px; /* ✅ Ayusin ang lapad ayon sa gusto mo */
+    height: 24px; /* ✅ Ayusin din ang taas */
+    display: inline-block; /* Para magkatabi ito nang maayos sa ibang elemento */
+    vertical-align: middle; /* Para pantay ang taas nito kasama ng teksto */
 }
-.left-heart{
-    border-top-left-radius: 50px;
-    border-bottom-left-radius: 50px;
+
+/* ✅ Kung may espesyal na ayos para sa kaliwang puso, panatilihin o baguhin ayon sa kailangan */
+.heart-left {
+    margin-left: 30px; /* Espasyo sa kanan ng puso sa kaliwa */
 }
-.right-heart{
-    margin-left: auto!important;
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
+
+/* ✅ At ganito rin para sa puso sa kanan */
+.heart-right {
+    margin-right: 30px; /* Espasyo sa kaliwa ng puso sa kanan */
 }
 .navbar .container {
     display: flex;
@@ -190,7 +196,7 @@ body {
 .nav-links a {
     font-family: 'Times New Roman' , 'Georgia';
     text-decoration: none;
-    font-size: 19px;
+    font-size: 20px;
     color: #d63384;
     font-weight: 500;
     transition: all 0.3s ease;
@@ -321,7 +327,10 @@ body {
         text-align: center;
     }
 }
-/* Features Section Styles */
+
+
+
+/*SKILLLLLLLLS*/
 .skills {
     padding: 50px 0;
   text-align: center;
@@ -332,7 +341,17 @@ body {
     font-weight: 700;
     font-size: 3.5rem;
     color: #d63384;
-    margin-bottom: 50px;
+    margin-bottom: 15px;
+}
+.skills-title-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.heart-skills {
+    width: 180px;
+    height: auto;
 }
 .skills-container {
     display: flex;
@@ -481,9 +500,11 @@ body {
 
 /* My Artwork Gallery Section Title */
 .artwork-gallery-title {
-    font-family: 'Brush Script MT', cursive; /* Example of a script font */
+    font-family: 'Oleo Script', serif;
+    text-align: left;
     font-size: 3em;
-    color: #e91e63; /* Pink color */
+    color: #d63384; /* Pink color */
+    margin-left: 100px;
     margin-bottom: 60px;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
 }
@@ -515,9 +536,6 @@ body {
     -webkit-overflow-scrolling: touch; /* Improves scrolling on iOS devices */
     gap: 20px; /* Space between gallery items */
     padding: 20px; /* Padding around images inside the scroll area */
-    border-radius: 20px; /* Rounded corners for the entire scroll container */
-    /* * MODIFIED: REMOVED background: rgba(255, 255, 255, 0.5); * */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Soft shadow for depth */
     flex-grow: 1; /* Allows container to take available width */
 
 }
@@ -627,14 +645,24 @@ body {
     font-size: 1em; /* Adjust size of unicode arrow */
 }
 
-
-/* Section Titles (e.g., "💖 Projects 💖", "💖 Contact Me 💖") */
 .section-title {
-    font-size: 2.5em; /* Larger font size */
-    color: #e91e63; /* Bright pink color */
+    font-family: 'Oleo Script', serif;
+    font-size: 3.5em; /* Larger font size */
+    color: #d63384;
     margin-top: 50px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.1); /* Slight shadow for depth */
+    display: inline-block;
+}
+.project-title-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.heart-project {
+    width: 180px;
+    height: auto;
 }
 
 /* Projects Container - to lay out cards side-by-side */
@@ -670,17 +698,6 @@ body {
     color: #f06292; /* Medium pink */
     margin-top: 0;
     margin-bottom: 20px;
-}
-
-/* Project Preview Image Styling */
-.project-preview {
-    width: 100%; /* Make preview container take full width of card */
-    max-width: 300px; /* Limit image width to avoid overflow */
-    height: auto; /* Maintain aspect ratio */
-    overflow: hidden; /* Hide any overflow */
-    border-radius: 10px; /* Slightly rounded corners for the image preview */
-    margin-bottom: 25px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for the image */
 }
 
 .project-preview img {
@@ -720,34 +737,354 @@ body {
 .project-button:hover {
     background-color: #f48fb1; /* Slightly darker pink on hover */
     transform: translateY(-2px); /* Lift button slightly */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* More pronounced shadow */
+    box-shadow: 0 6px 12;
 }
 
-/* --- Section Title Styling (Generic, for "Contact Me", "About Me", etc.) --- */
-/* If you already have a .section-title, integrate these properties. */
-.section-title {
-    font-size: 2.8em;
-    color: #e91e63; /* Darker pink */
-    margin-bottom: 60px;
-    font-family: 'Courgette', cursive; /* Example font from your hero section */
-    font-weight: normal;
+/* --- PANGKALAHATANG ESTILO PARA SA DALAWANG PAHINA --- */
+#ecommerce-website-page,
+#company-website-page {
+
+    background: transparent;
+    border-radius: 16px;
+    padding: 30px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center; /* Horizontally centers */
+    align-items: center; /
+}
+
+/* --- ESTILO NG ULO NG PAHINA --- */
+.page-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8c8dc;
+    padding: 15px 30px;
+    border-radius: 12px 12px 0 0;
+    position: relative;
+    margin-bottom: 0;
+}
+
+/* --- ESTILO NG BACK BUTTON --- */
+.preview-back-btn {
+    position: absolute;
+    left: 20px;
+    background: #f080b8;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.previewback-btn:hover {
+    background: #e25a9e;
+    transform: translateY(-2px);
+}
+
+/* --- ESTILO NG PAMAGAT --- */
+.page-title {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 2.2em;
+    color: #885470;
+    margin: 0;
+}
+
+/* --- ESTILO NG LALAGYAN NG PREVIEW --- */
+.website-preview {
+    background: #222;
+    padding: 20px;
+    border-radius: 0 0 12px 12px;
+}
+
+/* --- ESTILO NG NAVIGATION BAR --- */
+.preview-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.preview-nav .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.preview-nav .nav-links a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.preview-nav .nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.preview-nav .search-input {
+    padding: 8px 12px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}
+
+.search-btn, .menu-btn {
+    background: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.cart-icon {
+    color: black;
+    position: relative;
+}
+
+.cart-badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: #f080b8;
+    color: white;
+    font-size: 12px;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* --- ESTILO NG NILALAMAN NG E-COMMERCE --- */
+.preview-content {
+    display: grid;
+    grid-template-columns: 280px 1fr 350px;
+    gap: 20px;
+    background: #f8f2e9;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.store-title {
+    font-size: 2.5em;
+    color: #333;
+    line-height: 1.2;
+}
+
+.filters-label {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.filter-list {
+    list-style: none;
+    padding: 0;
+}
+
+.filter-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    font-size: 17px;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.product-card {
+    background: white;
+    border-radius: 8px;
+    padding: 5px;
     text-align: center;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
 }
 
-.section-title i {
-    color: #f48fb1; /* Lighter pink for heart icons */
-    margin: 0 15px;
-    font-size: 0.8em; /* Slightly smaller hearts */
+.product-card img {
+    width:90%;
+    border-radius: 6px;
+}
+
+.new-badge {
+    background: #f080b8;
+    color: white;
+    font-size: 12px;
+    padding: 3px 8px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 8px;
+}
+
+.featured-product {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.sale-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #ff9f1c;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.featured-product img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 20px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.new-price {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #f080b8;
+}
+
+.size-options {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+.size-options span {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #06ffb4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.shopnow-btn {
+    background: #f080b8;
+    color: white;
+    border: none;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.shopnow-btn:hover {
+    background: #e25a9e;
+}
+
+/* --- ESTILO NG NILALAMAN NG COMPANY WEBSITE --- */
+.company-preview-content {
+    background-image: url('Images/comp\ bg.webp');
+    background-size: cover;
+    background-position: center;
+    min-height: 600px;
+    padding: 50px 30px;
+    border-radius: 8px;
+    color: #ffffff;
+    width: 100%;
+    height: 100%;
+
+   
+}
+
+
+.company-preview-content h1 {
+    font-size: 4em;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-top: 100px;
+}
+
+.company-preview-content p {
+    font-size: 18px;
+    max-width: 500px;
+   text-align: justify;
+   margin-bottom: 10px;
+}
+
+.company-buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.learnmore-btn {
+    padding: 10px 25px;
+    border-radius: 20px;
+    border: 1px solid #ffffff;
+    background: transparent;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.signin-btn {
+    padding: 10px 25px;
+    border-radius: 20px;
+    border: none;
+    background: #ffffff;
 }
 
 
 
 /* --- Contact Section Container Styling --- */
 .contact-me-section {
+    margin-top: 80px;
     padding: 0px; /* Padding inside the contact section */
     background-color: transparent; /* VERY IMPORTANT: Ensures body background shows */
     text-align: center; /* Centers block-level content if not flexed */
 }
+.contact-title-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.heart-contact {
+    width: 180px;
+    height: auto;
+   
+}
+.contact-title {
+    font-family: 'Oleo Script', serif;
+    font-size: 3.5em; /* Larger font size */
+    color: #d63384;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1); /* Slight shadow for depth */
+}
+
 
 .contact-content-wrapper {
     display: flex;
@@ -759,8 +1096,6 @@ body {
     align-items: flex-start; /* Align items to the top of the container */
 }
 
-/* --- Common Styling for all Semi-Transparent Contact Boxes --- */
-/* This class provides the light white, semi-transparent background over the sparkle */
 .contact-box {
     background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white */
     border-radius: 20px;
@@ -864,21 +1199,20 @@ body {
 }
 
 .contact-info-item p {
-    margin: 0; /* Remove default paragraph margin */
+    margin: 0; 
     font-size: 1.1em;
     line-height: 1.4;
 }
 
 .contact-info-item p span {
     font-weight: bold;
-    color: #e91e63; /* Darker pink for the actual contact detail */
-    display: block; /* Makes the actual detail appear on a new line below the label */
+    color: #e91e63; 
+    display: block; 
     font-size: 0.9em;
 }
 
 /* --- Socials Group --- */
 .socials-group {
-    /* Inherits most styling from .contact-box */
     display: flex;
     padding: 25px 90px; /* Standard padding for the box */
     display: flex; /* Make the box itself a flex container */
@@ -886,69 +1220,54 @@ body {
     gap: 25;
 }
 
-.socials-label {
-    font-size: 1.1em;
-    color: #e91e63;
-    margin: 0;
-    font-weight: bold;
-}
-
-/* Ayos ng nilalaman sa loob */
+/* Ayos ng mga content  sa loob */
 .contact-info-item > div {
-    display: flex !important;
-    flex-direction: column !important; /* Magkapatong ang teksto at mga icon */
-    align-items: flex-start !important;
-    gap: 6px !important; /* Kaunting espasyo lang sa pagitan */
+    display: flex ;
+    flex-direction: column ; /* Magkapatong ang teksto at mga icon */
+    align-items: flex-start ;
+    gap: 6px ; /* Kaunting espasyo lang sa pagitan */
 }
 
-/* Tekstong "Socials:" */
+/* PAra sa Text na SOCIALS*/
 .socials-label {
-    font-size: 1.1em !important;
-    color: #e91e63 !important;
-    margin: 0 !important;
-    font-weight: bold !important;
-    line-height: 1 !important;
+    font-size: 1.1em ;
+    color: #e91e63 ;
+    margin: 0 ;
+    font-weight: bold !;
+    line-height: 1 ;
 }
 
-/* Lugar ng mga icon */
+/* Lugar ng mga icon  ng socials*/
 .social-icons-area {
-    display: flex !important;
-    gap: 10px !important; /* Pagitan ng bawat icon */
-    margin: 0 !important;
-    flex-wrap: nowrap !important; /* Para hindi magtapon sa ibang linya */
+    display: flex;
+    gap: 10px ; 
+    margin: 0 ;
+    flex-wrap: nowrap; 
 }
+/*gaano kalaki ang icon ng socials*/
 .social-icon {
     width: 55px;
 }
 
-/* --- Estilo ng Footer --- */
-.site-footer {
-    width: 100% !important;
-    display: flex !important;
-    justify-content: center !important;
-    padding: 20px 0 !important;
-    margin-top: 20px !important;
+
+/*footerr part*/
+.footer-container {
+    max-height: 100px;
+    display: flex;
+    justify-content: center;
+    padding: 5px 0 ; 
+    
 }
 
 .footer-content {
-    display: flex !important;
-    align-items: center !important;
-    gap: 12px !important; /* Pagitan ng puso at teksto */
-    background-color: #f8d7e7 !important; /* Kulay pink na katulad sa larawan */
-    padding: 12px 30px !important;
-    border-radius: 50px !important; /* Ginagawang bilog ang mga dulo */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1) !important; /* Kaunting lilim para maganda */
-}
-
-/* Estilo ng mga puso */
-.heart {
-    font-size: 20px !important;
-}
-
-/* Estilo ng teksto sa footer */
-.site-footer p {
-    font-size: 20px !important;
-    color: #d63384!important; /* Kulay ng teksto */
-    font-weight: 600 !important;
-    margin: 0 !important;
+    font-family: 'Times New Roman', serif;
+    display: flex ;
+    align-items: center ;
+    gap: 8px ; 
+    font-size: bold;
+    color: #d63384;
+    background-color: #f8d7e7;
+    padding: 8px 25px; 
+    border-radius: 50px ;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
