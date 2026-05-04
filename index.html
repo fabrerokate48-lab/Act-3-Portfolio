@@ -19,7 +19,7 @@
     <header class="navbar">
         <div class="nav-container">
             <!---heart sa kaliwa--->
-            <div class="heart heart-left">❤️</div>
+            <div class="heart heart-left"></div>
             <div class= "nav-left">
                 <div class="nav-logo">Kate Fabrero</div>
             </div>
@@ -36,7 +36,7 @@
                 </nav>
             </div>
             <!--heart sa kanan-->
-            <div class="heart heart-right">❤️</div>
+            <div class="heart heart-right"></div>
         </div>
     </header>
 
@@ -56,7 +56,7 @@
             </div>
             <!--kanan:picture ko-->
             <div class="hero-image">
-                <img src="Ellipse 1.png" alt="Kate Fabrero">
+                <img src="Images/Ellipse 1.png" alt="Kate Fabrero">
             </div>
         </div>
     </section>
@@ -73,7 +73,7 @@
                         <p>Through these experiences, she continous to develop her skills in problem-solving, design, and technology. Kate is passionate about learning new technologies and continuously improving her abilities. She aims to gain more experience and build innovative solutions that will contribute to the field of computer engineering in the future.</p>
                     </div>
                     <div class="about-media">
-                        <img src="pic.png" alt="About Image"> 
+                        <img src="Images/pic.png" alt="About Image"> 
                     </div>
                 </div>
             </div>
@@ -82,38 +82,43 @@
 
     <!-- Skills Section -->
     <section id="skills" class="skills">
+        <div class="skills-title-wrapper">
+            <img src="Images/heart.png" alt="heart-left" class="heart-skills">
             <h2 class="skill-title">SKILLS</h2>
+            <img src="Images/heart.png" alt="heart-right" class="heart-skills">
+        </div>
+           
             <div class="skills-container">
                 <div class="skill-card web">
-                    <img src="web.png" alt="Web Development">
+                    <img src="Images/web.png" alt="Web Development">
                     <div class="text-content">
                           <h3>Web Development</h3>
                           <p>Create responsive website and portfolio pages.</p>
                     </div>
                 </div>
                 <div class="skill-card app">
-                    <img src="app.png" alt="App Development">
+                    <img src="Images/app.png" alt="App Development">
                     <div class="text-content">
                         <h3>App Development</h3>
                         <p>Design simple application and digital system.</p>
                     </div>
                 </div>
                 <div class="skill-card UI">
-                    <img src="UI.png" alt="UI/Graphic Design">
+                    <img src="Images/UI.png" alt="UI/Graphic Design">
                     <div class="text-content">
                         <h3>UI/Graphic Design</h3>
                         <p>Create wireframes, prototype, and layouts.</p>
                     </div>
                 </div>
                 <div class="skill-card House">
-                    <img src="House.png" alt="House Design">
+                    <img src="Images/House.png" alt="House Design">
                     <div class="text-content">
                         <h3>House Design</h3>
                         <p>Design basic home layouts and architectural ideas.</p>
                     </div>
                 </div>
                 <div class="skills-button">
-                    <img src="voice.png"alt="Music Button">
+                    <img src="Images/voice.png"alt="Music Button">
             </div>
         </div>
     </section>
@@ -132,28 +137,28 @@
             <!-- Gallery Container for Images -->
             <div class="gallery-container" id="gallery-container">
                 <div class="gallery-item">
-                    <img src="g11.jpg" alt="Artwork 1">
+                    <img src="Images/g11.jpg" alt="Artwork 1">
                 </div>
                 <div class="gallery-item">
-                    <img src="g2.jpg" alt="Artwork 2">
+                    <img src="Images/g2.jpg" alt="Artwork 2">
                 </div>
                 <div class="gallery-item">
-                    <img src="g3.png" alt="Artwork 3">
+                    <img src="Images/g3.png" alt="Artwork 3">
                 </div>
                 <div class="gallery-item">
-                    <img src="g4.jpg" alt="Artwork 4">
+                    <img src="Images/g4.jpg" alt="Artwork 4">
                 </div>
                 <div class="gallery-item">
-                    <img src="g5.avif" alt="Artwork 5">
+                    <img src="Images/g5.avif" alt="Artwork 5">
                 </div>
                 <div class="gallery-item">
-                    <img src="g6.png" alt="Artwork 6">
+                    <img src="Images/g6.png" alt="Artwork 6">
                 </div>
                 <div class="gallery-item">
-                    <img src="g7.avif" alt="Artwork 7">
+                    <img src="Images/g7.avif" alt="Artwork 7">
                 </div>
                 <div class="gallery-item">
-                    <img src="g8.avif" alt="Artwork 8">
+                    <img src="Images/g8.jpg" alt="Artwork 8">
                 </div>
             </div>
 
@@ -172,39 +177,184 @@
 
     <!-- Projects Section -->
     <section id="projects" class="projects-section">
-    <h2 class="section-title">💖 Projects 💖</h2>
+        <div class="project-title-wrapper">
+            <img src="Images/heart.png" alt="heart-left" class="heart-project">
+            <h2 class="section-title">Projects</h2>
+            <img src="Images/heart.png" alt="heart-right" class="heart-project">
+        </div>
 
+<!-- LALAGYAN NG MGA PROYEKTO AT MGA PAHINA -->
+<div style="position: relative; min-height: 550px; width: 100%;">
+    
+    <!-- MGA PROYEKTO -->
     <div class="projects-container">
         <!-- Project 1: Company Website -->
         <div class="project-card">
             <h3 class="project-title">Company Website</h3>
             <div class="project-preview">
-                <img src="proj 1.png" alt="Company Website Preview">
+                <img src="Images/proj 1.png" alt="Company Website Preview">
             </div>
             <p class="project-description">A sample company website about business consultant.</p>
-            <!-- Replace # with actual link if you have one -->
-            <a href="#" class="project-button" target="_blank">Click here</a>
+            <a href="javascript:void(0);" class="project-button" id="openCompanyPage">Click here</a>
         </div>
 
         <!-- Project 2: E-commerce Website -->
         <div class="project-card">
             <h3 class="project-title">E-commerce Website</h3>
             <div class="project-preview">
-                <img src="proj 2.png" alt="E-commerce Website Preview">
+                <img src="Images/proj 2.png" alt="E-commerce Website Preview">
             </div>
             <p class="project-description">A sample online shop design with product pages.</p>
-            <!-- Replace # with actual link if you have one -->
-            <a href="#" class="project-button" target="_blank">Click here</a>
+            <a href="javascript:void(0);" class="project-button" id="openEcommercePage">Click here</a>
         </div>
     </div>
-</section>
+
+
+    <!-- PAHINA NG COMPANY WEBSITE -->
+    <section id="company-website-page" style="display: none !important; position: fixed; top: 0; left: 0; width: 100%; min-height: 100%; background: blur; z-index: 999; padding: 20px; box-sizing: border-box; margin: 0;">
+        <div class="website-page-container">
+            <!-- Header Bar -->
+            <div class="page-header">
+                <button class="preview-back-btn">Back</button>
+                <h2 class="page-title">❤️ Website ❤️</h2>
+            </div>
+
+            <!-- Main Website Preview Area -->
+            <div class="website-preview">
+                <!-- Navigation Bar -->
+                <div class="preview-nav">
+                    <h3 style="color: #000; margin: 0;">Company</h3>
+                    <ul class="nav-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                    <div class="nav-actions">
+                        <input type="text" class="search-input" placeholder="">
+                    </div>
+                </div>
+
+                <!-- Main Content -->
+                <div class="company-preview-content">
+                    <h1>Business Consultant</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque suscipit tellus vitae purus dignissim, nec tincidunt neque condimentum. Nam nec ligula pretium mi interdum hendrerit in sit amet ligula.</p>
+                    <div class="company-buttons">
+                        <button class="learnmore-btn">Learn more</button>
+                        <button class="signin-btn">Sign in</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- PAHINA NG E-COMMERCE WEBSITE -->
+    <section id="ecommerce-website-page" style="display: none !important; position: fixed; top: 0; left: 0; width: 100%; min-height: 100%; background: blur; z-index: 999; padding: 20px; box-sizing: border-box; margin: 0;">
+        <div class="website-page-container">
+            <!-- Header Bar -->
+            <div class="page-header">
+                <button class="preview-back-btn">Back</button>
+                <h2 class="page-title">❤️ Website ❤️</h2>
+            </div>
+
+            <!-- Main Website Preview Area -->
+            <div class="website-preview">
+                <!-- Navigation Bar -->
+                <div class="preview-nav">
+                    <ul class="nav-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Catalog</a></li>
+                        <li><a href="#">Gender</a></li>
+                        <li><a href="#">Brands</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    <div class="nav-actions">
+                        <input type="text" placeholder="Search" class="search-input">
+                        <button class="search-btn">🔍</button>
+                        <span class="cart-icon">Cart <span class="cart-badge">3</span></span>
+                        <button class="menu-btn">☰</button>
+                    </div>
+                </div>
+
+                <!-- Main Content Area -->
+                <div class="preview-content">
+                    <!-- Left Sidebar Filters -->
+                    <div class="content-sidebar">
+                        <h1 class="store-title">THE Second Hand Store</h1>
+                        <div class="filters-section">
+                            <p class="filters-label">Filters ☰</p>
+                            <h3>Shop By</h3>
+                            <ul class="filter-list">
+                                <li>Gender <span>☑</span></li>
+                                <li>Brands <span>☑</span></li>
+                                <li>Style <span>☑</span></li>
+                                <li>Price <span>☑</span></li>
+                                <li>Season <span>☑</span></li>
+                                <li>Sales <span>☑</span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Products Display -->
+                    <div class="products-grid">
+                        <div class="product-card">
+                            <img src="Images/clothes 1.avif" alt="Product 1">
+                            <p class="product-text">Your text here</p>
+                            <span class="new-badge">Newest</span>
+                        </div>
+                        <div class="product-card">
+                            <img src="Images/clothes 2.jpg" alt="Product 2">
+                            <p class="product-text">Your text here</p>
+                            <span class="new-badge">Newest</span>
+                        </div>
+                        <div class="product-card">
+                            <img src="Images/clothes 3.avif" alt="Product 3">
+                            <p class="product-text">Your text here</p>
+                            <span class="new-badge">Newest</span>
+                        </div>
+                        <div class="product-card">
+                            <img src="Images/clothes 4.webp" alt="Product 4">
+                            <p class="product-text">Your text here</p>
+                            <span class="new-badge">Newest</span>
+                        </div>
+                    </div>
+
+                    <!-- Featured Product -->
+                    <div class="featured-product">
+                        <div class="sale-badge">Sale</div>
+                        <img src="Images/fetured.jpeg" alt="Featured Product">
+                        <div class="product-info">
+                            <h3>Your Title</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                            <p class="old-price">$80.99</p>
+                            <p class="new-price">$49.99</p>
+                            <div class="size-options">
+                                <span>S</span>
+                                <span>M</span>
+                                <span>L</span>
+                                <span>XL</span>
+                            </div>
+                            <button class="shopnow-btn">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
 
 <!-- Contact Me Section -->
 <section id="contact" class="contact-me-section">
-    <h2 class="section-title">
-        <i class="fas fa-heart"></i> Contact Me <i class="fas fa-heart"></i>
-    </h2>
-
+    <div class="contact-title-wrapper">
+        <img src="Images/heart.png" alt="heart-left" class="heart-contact">
+        <h2 class="contact-title">Contact Me</h2>
+        <img src="Images/heart.png" alt="heart-right" class="heart-contact">
+    </div>
+    
     <div class="contact-content-wrapper">
         <!-- Left Column: Contact Form -->
         <div class="contact-form-container contact-box">
@@ -229,38 +379,38 @@
         <div class="contact-info-socials-container">
             <!-- Contact Info Items -->
             <div class="contact-box contact-info-item">
-                <img src="email icon.png" alt="Email Icon" class="contact-icon">
+                <img src="Images/email icon.png" alt="Email Icon" class="contact-icon">
                 <!-- Added mailto link -->
                 <p>Email:<br><a href="mailto:fabrerokate48@gmail.com" style="color: #e91e63; text-decoration: none;"><span>fabrerokate48@gmail.com</span></a></p>
             </div>
             <div class="contact-box contact-info-item">
-                <img src="number icon.png" alt="Phone Icon" class="contact-icon">
+                <img src="Images/number icon.png" alt="Phone Icon" class="contact-icon">
                 <!-- Added tel link -->
                 <p>Phone:<br><a href="tel:+63912345678955" style="color: #e91e63; text-decoration: none;"><span>+63912345678955</span></a></p>
             </div>
             <div class="contact-box contact-info-item">
-                <img src="location .png" alt="Location Icon" class="contact-icon">
+                <img src="Images/location .png" alt="Location Icon" class="contact-icon">
                 <p>Location:<br><span>Philippines</span></p>
             </div>
 
             <!-- Socials Group -->
             <div class="contact-box contact-info-item">
-                        <img src="socials.png" alt="Social Icon" class="contact-icon">
+                        <img src="Images/socials.png" alt="Social Icon" class="contact-icon">
                             <div>
                                 <p class="socials-label">Socials:</p>
                             <div class="social-icons-area">
                                 <!-- Replace # with your actual profile links -->
                                 <a href="https://www.facebook.com/kate.fabrero.2025" target="_blank">
-                                    <img src="f.png" alt="Facebook" class="social-icon">
+                                    <img src="Images/f.png" alt="Facebook" class="social-icon">
                                 </a>
                                 <a href="https://www.instagram.com/singkithia_ako?igsh=YmJpeDJneGRqajdp" target="_blank">
-                                    <img src="IG.png" alt="Instagram" class="social-icon">
+                                    <img src="Images/IG.png" alt="Instagram" class="social-icon">
                                 </a>
                                 <a href="t.me/kat_chana" target="_blank">
-                                    <img src="T.png" alt="Telegram" class="social-icon">
+                                    <img src="Images/T.png" alt="Telegram" class="social-icon">
                                 </a>
                                 <a href="tiktok.com/@_safirakate_" target="_blank">
-                                    <img src="Tiktok.png" alt="TikTok" class="social-icon">
+                                    <img src="Images/Tiktok.png" alt="TikTok" class="social-icon">
                                 </a>
                                
                             </div>
@@ -271,13 +421,16 @@
 </section>
 
 <!-- Footer -->
-<footer class="site-footer">
+<div style="position: relative; min-height: 50px; width: 100%;"></div>
+<footer class="footer-container">
     <div class="footer-content">
-        <span class="heart">❤️</span>
+        <div class="heart footer-heart-left"></div>
         <p>© 2026 Personal Portfolio - Kate</p>
-        <span class="heart">❤️</span>
+        <div class="heart footer-heart-right"></div>
     </div>
 </footer>
+
+
 
 <script src="script.js"></script>
 </body>
